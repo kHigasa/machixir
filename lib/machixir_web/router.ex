@@ -14,7 +14,7 @@ defmodule MachixirWeb.Router do
   end
 
   scope "/", MachixirWeb do
-    pipe_through :browser # Use the default browser stack
+    pipe_through :browser
 
     get "/", PageController, :index
   end

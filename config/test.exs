@@ -11,7 +11,6 @@ config :logger, level: :warn
 
 # Configure your database
 config :machixir, Machixir.Repo,
-  adapter: Ecto.Adapters.Postgres,
   username: "postgres",
   password: "postgres",
   database: "machixir_test",
