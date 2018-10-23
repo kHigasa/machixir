@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="ELIXIR_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="Python" name="Python">
+      <configuration sdkName="" />
+    </facet>
+  </component>
   <component name="NewModuleRootManager">
     <output url="file://$MODULE_DIR$/_build/dev/lib/machixir/ebin" />
     <output-test url="file://$MODULE_DIR$/_build/test/lib/machixir/ebin" />
@@ -9,5 +14,8 @@
     </content>
     <orderEntry type="jdk" jdkName="Elixir 1.7.3" jdkType="Elixir SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+  <component name="PyDocumentationSettings">
+    <option name="renderExternalDocumentation" value="true" />
   </component>
 </module>
