@@ -42,7 +42,14 @@ defmodule Machixir.MixProject do
       {:gettext, "~> 0.11"},
       {:jason, "~> 1.0"},
       {:plug_cowboy, "~> 2.0" },
-      {:cowboy, "~> 2.5"}
+      {:cowboy, "~> 2.5"},
+      {:csv, "~> 2.1"},
+      {:statistics, "~> 0.5.1"},
+      {:smallex, "~> 0.1.8"},
+      {:excelion, "~> 0.0.5"},
+      {:absinthe, "~> 1.4"},
+      {:absinthe_plug, "~> 1.4"},
+      {:erlport, "~> 0.9.8"}
     ]
   end
 
