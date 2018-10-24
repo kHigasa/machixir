@@ -23,12 +23,12 @@ def predict(network, x):
 
     a1 = np.dot(x, w1) + b1
     z1 = sigmoid(a1)
-    a2 = np.dot(z1, w2.all()) + b2
+    a2 = np.dot(z1, w2) + b2
     z2 = sigmoid(a2)
-    a3 = np.dot(z2, w3.all()) + b3
+    a3 = np.dot(z2, w3) + b3
     y = softmax(a3)
 
-    return a1
+    return y
 
 def out():
     x, t = get_data()
