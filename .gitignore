@@ -44,7 +44,7 @@ npm-debug.log
 # Ignore IDE files
 .idea
 
-.DS_Store
+*.DS_Store
 
 # Ignore dataset
 /dataset/
