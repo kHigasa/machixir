@@ -11,8 +11,8 @@ config :logger, level: :warn
 
 # Configure your database
 config :machixir, Machixir.Repo,
-  username: "postgres",
-  password: "postgres",
+  username: "andre",
+  password: "",
   database: "machix_test",
   hostname: "localhost",
   pool: Ecto.Adapters.SQL.Sandbox
