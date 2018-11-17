@@ -13,6 +13,6 @@ config :logger, level: :warn
 config :machixir, Machixir.Repo,
   username: "postgres",
   password: "postgres",
-  database: "machixir_test",
+  database: "machix_test",
   hostname: "localhost",
   pool: Ecto.Adapters.SQL.Sandbox

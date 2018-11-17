@@ -70,6 +70,6 @@ config :phoenix, :plug_init_mode, :runtime
 config :machixir, Machixir.Repo,
   username: "postgres",
   password: "postgres",
-  database: "machixir_dev",
+  database: "machix_dev",
   hostname: "localhost",
   pool_size: 10
