@@ -1,4 +1,4 @@
-defmodule MachixirWeb.Router do
+defmodule MachixirWeb.ParserRouter do
   use MachixirWeb, :router
 
   pipeline :browser do
@@ -18,6 +18,15 @@ defmodule MachixirWeb.Router do
 
     get "/", PageController, :index
   end
+
+  forward "/graphql",
+  Absinthe.Plug,
+  schema: MachixirWeb.Schema
+  # For the GraphiQL interactive interface, a must-have for happy frontend devs.
+  forward "/graphiql",
+  Absinthe.Plug.GraphiQL,
+  schema: MachixirWeb.Schema,
+  interface: :simple
 
   # Other scopes may use custom stacks.
   # scope "/api", MachixirWeb do

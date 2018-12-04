@@ -49,6 +49,7 @@ defmodule Machixir.MixProject do
       {:excelion, "~> 0.0.5"},
       {:absinthe, "~> 1.4"},
       {:absinthe_plug, "~> 1.4"},
+      {:poison, "~> 3.1.0"},
       {:erlport, "~> 0.10.0"}
     ]
   end
