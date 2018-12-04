@@ -1,4 +1,4 @@
-defmodule MachixirWeb.ParserRouter do
+defmodule MachixirWeb.Router do
   use MachixirWeb, :router
 
   pipeline :browser do
