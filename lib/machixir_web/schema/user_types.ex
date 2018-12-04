@@ -3,7 +3,7 @@ defmodule MachixirWeb.Schema.UserTypes do
 
   @desc "A user"
   object :user do
-    field :id, :id # clients can get the user id
-    field :name, :string # clients can also ask for the name field
+    field :id, :id
+    field :username, :string
   end
 end

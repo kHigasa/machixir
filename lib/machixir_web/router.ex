@@ -22,14 +22,14 @@ defmodule MachixirWeb.Router do
   forward "/graphql",
   Absinthe.Plug,
   schema: MachixirWeb.Schema
-  # For the GraphiQL interactive interface, a must-have for happy frontend devs.
+
   forward "/graphiql",
   Absinthe.Plug.GraphiQL,
   schema: MachixirWeb.Schema,
   interface: :simple
 
   # Other scopes may use custom stacks.
-  # scope "/api", MachixirWeb do
-  #   pipe_through :api
-  # end
+  #  scope "/api", MachixirWeb do
+  #    pipe_through :api
+  #  end
 end

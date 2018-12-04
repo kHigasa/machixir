@@ -5,10 +5,9 @@ defmodule MachixirWeb.Schema do
   alias MachixirWeb.Resolvers
 
   query do
-    @desc "Get a user"
-    field :user, :user do
-      arg :id, non_null(:id)
-      resolve &Resolvers.Users.find/3
+    @desc "Get all user"
+    field :user, list_of(:user) do
+      resolve &Resolvers.Users.list_users/3
     end
   end
 end
