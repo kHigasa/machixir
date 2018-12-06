@@ -17,6 +17,9 @@ defmodule Machixir.User do
     field :password, :string
     field :travel_expense, :integer
     field :username, :string
+
+    has_many :reports, Machixir.Report
+    has_many :shifts, Machixir.Shift
   end
 
   @doc false
