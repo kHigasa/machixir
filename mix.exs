@@ -20,7 +20,7 @@ defmodule Machixir.MixProject do
   def application do
     [
       mod: {Machixir.Application, []},
-      extra_applications: [:logger, :runtime_tools]
+      extra_applications: [:logger, :runtime_tools, :ueberauth_slack]
     ]
   end
 
@@ -50,6 +50,7 @@ defmodule Machixir.MixProject do
       {:absinthe, "~> 1.4"},
       {:absinthe_plug, "~> 1.4"},
       {:poison, "~> 3.1.0"},
+      {:ueberauth_slack, "~> 0.3"},
       {:erlport, "~> 0.10.0"}
     ]
   end
